@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link
       rel="icon"
@@ -15,11 +22,11 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       @theme {
-        --color-gblue-500: #4f7df3;
-        --color-gblue-200: #c2d3ff;
-        --color-gred-400: #ff5263;
-        --color-ggray-400: #969696;
-        --color-gblue-950: #151f29;
+        --color-blue-200: #c2d3ff;
+        --color-blue-500: #4f7df3;
+        --color-blue-950: #151f29;
+        --color-red-400: #ff5263;
+        --color-gray-400: #969696;
         --font-libre: "Libre Franklin", sans-serif;
       }
     </style>
@@ -27,12 +34,30 @@
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    <main class="min-h-screen">
-      <p class="font-libre">Lorem ipsum dolor sit.</p>
-      <p>Lorem ipsum dolor sit.</p>
+    <main class="min-h-screen flex flex-col justify-center items-center gap-4">
+      <img src="images/logo.svg" aria-hidden="true" />
+      <h1 class="text-4xl text-[#969696]">
+        We are launching <span class="text-[#151f29] font-bold">soon!</span>
+      </h1>
+      <p class="">Subscribe and get notified</p>
+      <div>
+        <input type="text" id="eamail" placeholder="exemple@gmail.com" />
+        <button>Notify Me</button>
+      </div>
+      <img
+        src="images/illustration-dashboard.png"
+        alt="dashboard illustration"
+        class="max-w-1/2"
+      />
+      <div>
+        <i class="fa-brands fa-facebook-f" style="color: #4f7df3"></i>
+        <i class="fa-brands fa-x-twitter" style="color: #4f7df3"></i>
+        <i class="fa-brands fa-instagram" style="color: #4f7df3"></i>
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
     </main>
     <!-- 
-  We are launching soon!µ -->
+  We are launching soon! -->
     <!-- 
   Subscribe and get notified -->
     <!-- 
