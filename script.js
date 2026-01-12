@@ -6,15 +6,13 @@ const emaillRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 email.addEventListener("input", () => {
   let value = email.value.trim();
+  email.classList.remove("valid", "invalid");
   if (value === "") {
-    console.log("enter email");
-    email.classList.remove("valid");
-    email.classList.remove("invalid");
     feedback.classList.add("hidden");
   } else if (emaillRegex.test(value)) {
-    console.log("valid");
+    email.classList.add("valid");
   } else {
-    console.log("invalid");
+    email.classList.add("invalid");
   }
 });
 
@@ -28,12 +26,3 @@ form.addEventListener("submit", (e) => {
     email.classList.add("valid");
   }
 });
-
-// function validateEmail(email) {
-//   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-//   return emailPattern.test(email);
-// }
-
-// // Usage example:
-// console.log(validateEmail(email)); // true
-// console.log(validateEmail("invalid-email")); // false
