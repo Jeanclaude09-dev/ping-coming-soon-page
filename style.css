@@ -7,6 +7,14 @@
   box-sizing: border-box;
 }
 
+.invalid {
+  border-color: #ff5263;
+}
+
+.valid {
+  border-color: #4ade80;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
