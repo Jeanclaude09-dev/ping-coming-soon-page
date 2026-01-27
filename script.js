@@ -11,6 +11,7 @@ email.addEventListener("input", () => {
     feedback.classList.add("hidden");
   } else if (emaillRegex.test(value)) {
     email.classList.add("valid");
+    feedback.classList.add("hidden");
   } else {
     email.classList.add("invalid");
   }
