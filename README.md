@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
+- [solution URL here](https://www.frontendmentor.io/solutions/ping-single-column-coming-soon-page-qOugj6l5vQ)
 
 - [live site URL here](https://jeanclaude09-dev.github.io/ping-coming-soon-page/)
 
